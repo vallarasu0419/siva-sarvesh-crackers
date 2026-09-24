@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api
+Disallow: /order
+Disallow: /order-confirmation
+
+Sitemap: https://sivasarveshcrackers.com/sitemap.xml

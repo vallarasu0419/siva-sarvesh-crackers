@@ -1,0 +1,6 @@
+.form { display: grid; gap: var(--space-4); }
+.form > div { width: 100%; }
+.current { margin: 0; display: flex; align-items: center; gap: var(--space-2); }
+.confirm p { margin-bottom: var(--space-3); }
+.remarks { background: var(--background-color); padding: var(--space-3); border-radius: var(--radius-md); font-size: var(--text-sm); }
+.error { margin: 0; color: var(--danger-color); font-weight: 600; font-size: var(--text-sm); }

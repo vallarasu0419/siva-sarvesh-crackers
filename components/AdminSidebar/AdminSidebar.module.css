@@ -1,0 +1,33 @@
+.sidebar {
+  display: flex; flex-direction: column; gap: var(--space-5);
+  width: 220px; flex-shrink: 0;
+  min-height: 100vh;
+  position: sticky; top: 0;
+  padding: var(--space-5) var(--space-4);
+  background: var(--secondary-color);
+  color: var(--white-color);
+}
+.brand { font-family: var(--font-display); font-weight: 800; font-size: var(--text-lg); margin: 0; display: flex; flex-direction: column; line-height: 1.1; }
+.brand span { font-size: var(--text-xs); color: var(--accent-color); font-family: var(--font-body); font-weight: 600; }
+.links { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-1); }
+.link, .logout {
+  display: flex; align-items: center; gap: var(--space-3);
+  width: 100%;
+  padding: 0.65rem 0.8rem;
+  border: 0; border-radius: var(--radius-md);
+  background: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none; font-weight: 600; cursor: pointer; text-align: left;
+}
+.link:hover, .logout:hover { background: rgba(255, 255, 255, 0.08); color: var(--white-color); }
+.active, .active:hover { background: var(--accent-color); color: var(--secondary-color); }
+.footer { margin-top: auto; display: grid; gap: var(--space-2); }
+.admin { margin: 0; font-weight: 600; font-size: var(--text-sm); display: flex; flex-direction: column; }
+.admin span { font-weight: 400; color: rgba(255, 255, 255, 0.6); font-size: var(--text-xs); word-break: break-all; }
+@media (max-width: 860px) {
+  .sidebar { width: 100%; min-height: 0; position: static; flex-direction: row; flex-wrap: wrap; align-items: center; padding: var(--space-3) var(--space-4); }
+  .links { display: flex; }
+  .footer { margin: 0 0 0 auto; }
+  .admin { display: none; }
+  .link span, .logout span { display: none; }
+}

@@ -1,0 +1,13 @@
+.pagination { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-3); margin-top: var(--space-4); }
+.summary { margin: 0; color: var(--muted-color); font-size: var(--text-sm); }
+.buttons { display: flex; align-items: center; gap: var(--space-1); }
+.group { display: inline-flex; align-items: center; gap: var(--space-1); }
+.buttons button {
+  min-width: 2.25rem; height: 2.25rem; padding: 0 0.5rem;
+  border: 1px solid var(--border-color); border-radius: var(--radius-sm);
+  background: var(--surface-color); cursor: pointer;
+}
+.buttons button:hover:not(:disabled) { border-color: var(--secondary-color); }
+.buttons button:disabled { opacity: 0.45; cursor: not-allowed; }
+.buttons .current { background: var(--secondary-color); border-color: var(--secondary-color); color: var(--white-color); }
+.gap { color: var(--muted-color); padding: 0 0.2rem; }

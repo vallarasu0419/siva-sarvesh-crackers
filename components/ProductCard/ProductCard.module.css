@@ -1,0 +1,16 @@
+.card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-2) var(--space-3);
+  padding: var(--space-4);
+  background: var(--surface-color);
+}
+.selected { background: var(--accent-soft); }
+.info { min-width: 0; }
+.name { font-family: var(--font-body); font-size: var(--text-base); font-weight: 600; margin: 0; color: var(--secondary-color); }
+.tamil { margin: 0; font-size: var(--text-xs); color: var(--muted-color); }
+.meta { display: flex; gap: var(--space-3); margin: 0; font-size: var(--text-xs); color: var(--muted-color); }
+.prices { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-2); margin: var(--space-1) 0 0; }
+.price { font-weight: 700; color: var(--primary-color); font-size: var(--text-lg); }
+.buy { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); }
+.amount { font-weight: 700; color: var(--secondary-color); }

@@ -1,0 +1,15 @@
+.wrapper { display: flex; justify-content: center; align-items: center; padding: var(--space-5); }
+.inline { display: inline-flex; padding: 0; }
+.spinner {
+  display: inline-block;
+  border-radius: 50%;
+  border: 3px solid currentColor;
+  border-right-color: transparent;
+  animation: spin 0.7s linear infinite;
+  color: var(--primary-color);
+}
+.inline .spinner { color: inherit; }
+.sm { width: 1em; height: 1em; border-width: 2px; }
+.md { width: 1.75rem; height: 1.75rem; }
+.lg { width: 2.75rem; height: 2.75rem; }
+@keyframes spin { to { transform: rotate(360deg); } }

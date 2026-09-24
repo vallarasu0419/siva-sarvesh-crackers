@@ -1,0 +1,15 @@
+.list { display: flex; gap: var(--space-2); margin: 0; padding: 0; list-style: none; flex-wrap: wrap; }
+.link {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2);
+  min-width: 2.25rem; height: 2.25rem;
+  border-radius: var(--radius-pill);
+  text-decoration: none;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.lg .link { min-width: 2.75rem; height: 2.75rem; font-size: 1.15rem; }
+.light .link { color: var(--white-color); background: rgba(255, 255, 255, 0.1); }
+.light .link:hover { background: var(--accent-color); color: var(--secondary-color); }
+.dark .link { color: var(--secondary-color); background: var(--surface-color); border: 1px solid var(--border-color); }
+.dark .link:hover { background: var(--secondary-color); color: var(--white-color); }
+.link span { font-weight: 600; font-size: var(--text-sm); padding-right: var(--space-2); }
+.link:has(span) { padding: 0 var(--space-3); }

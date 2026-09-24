@@ -1,0 +1,18 @@
+.form { display: flex; flex-direction: column; gap: var(--space-4); align-items: stretch; text-align: center; }
+.icon {
+  align-self: center;
+  display: grid; place-items: center;
+  width: 3.5rem; height: 3.5rem;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--warning-color);
+  font-size: 1.5rem;
+}
+.success { background: var(--success-soft); color: var(--success-color); }
+.text { margin: 0 auto; color: var(--muted-color); }
+.otpField { text-align: left; }
+.otpField input { font-size: 1.6rem; letter-spacing: 0.6em; text-align: center; font-weight: 700; }
+.resend { margin: 0 auto; font-size: var(--text-sm); color: var(--muted-color); }
+.wait { font-variant-numeric: tabular-nums; }
+.link { border: 0; background: none; padding: 0; color: var(--primary-color); font-weight: 700; cursor: pointer; text-decoration: underline; }
+.error { margin: 0; color: var(--danger-color); font-weight: 600; font-size: var(--text-sm); }
