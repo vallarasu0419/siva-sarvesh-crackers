@@ -22,7 +22,7 @@ export default apiHandler({
     if (!admin) throw new AppError(401, 'Incorrect email or password.');
 
     await query('UPDATE admins SET last_login_at = NOW() WHERE id = ?', [admin.id]);
-    setSessionCookie(res, await createSessionToken(admin));
+    setSessionCookie(req, res,await createSessionToken(admin));
     return res.status(200).json({ admin: { name: admin.name, email: admin.email } });
   },
 });

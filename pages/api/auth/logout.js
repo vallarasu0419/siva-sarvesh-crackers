@@ -3,7 +3,7 @@ import { clearSessionCookie } from '@/lib/auth/session';
 
 export default apiHandler({
   POST: async (req, res) => {
-    clearSessionCookie(res);
+    clearSessionCookie(req, res);
     return res.status(200).json({ message: 'Logged out.' });
   },
 });
